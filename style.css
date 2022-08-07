@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+}
+
+a {
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    font-size: 45px;
+    text-align: left;
+    border-bottom: 2px solid gray;
+    padding: 20px;
+    margin: 0;
+    height: 400px;
+    background-image: url('head image re.jpg');
+    background-size: cover;
+}
+
+#grid ol {
+    border-right: 2px solid gray;
+    width: 100px;
+    padding: 20px;
+    margin: 0;
+    padding-left: 28px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+
+#grid #article {
+    padding-left: 20px;
+}
+
+#grid>div:nth-child(2n+2) {
+    background-color: rgb(214, 214, 214);
+}
+
+@media(max-width:800px) {
+    #grid {
+        display: block;
+    }
+
+    #grid ol {
+        border-right: none;
+    }
+
+    h1 {
+
+        border-bottom: none;
+    }
+}
+.image{
+    border: 2px solid rgb(47, 47, 47);
+}
